@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="696.0" style="-fx-background-color: rgb(7,96,169);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ResultController">
+   <children>
+      <Pane layoutX="16.0" layoutY="21.0" prefHeight="560.0" prefWidth="665.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="table" layoutX="17.0" layoutY="137.0" prefHeight="287.0" prefWidth="632.0">
+              <columns>
+                <TableColumn fx:id="col_course" prefWidth="153.0" text="Course" />
+                <TableColumn fx:id="col_credit" prefWidth="147.0" text="Credit" />
+                  <TableColumn fx:id="col_gpa" prefWidth="147.0" text="GPA" />
+                  <TableColumn fx:id="col_seme" prefWidth="182.0" text="Semester " />
+              </columns>
+            </TableView>
+            <Button layoutX="572.0" layoutY="518.0" mnemonicParsing="false" onAction="#backButton" prefHeight="28.0" prefWidth="70.0" text="Back" />
+            <Label layoutX="537.0" layoutY="438.0" prefHeight="28.0" prefWidth="50.0" text="CGPA :">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="cgpatext" layoutX="592.0" layoutY="438.0" prefHeight="28.0" prefWidth="50.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="233.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result Sheet" wrappingWidth="198.13671875">
+               <font>
+                  <Font name="Californian FB Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

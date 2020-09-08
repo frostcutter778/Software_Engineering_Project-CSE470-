@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="696.0" style="-fx-background-color: rgb(7,96,169);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PreAdvisingController">
+   <children>
+      <Label layoutX="181.0" layoutY="71.0" text="Pre Advising Setups " textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="192.0" text="Set Current Semester:" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="semesterNo" layoutX="293.0" layoutY="190.0" prefHeight="25.0" prefWidth="76.0" />
+      <Button fx:id="setSemester" layoutX="466.0" layoutY="190.0" mnemonicParsing="false" onAction="#SetSemesterNumberButtonAction" prefHeight="25.0" prefWidth="53.0" text="Set" />
+      <Label layoutX="101.0" layoutY="264.0" text="Set Max Credit Completed:" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="setMaxCredit" layoutX="323.0" layoutY="262.0" prefHeight="25.0" prefWidth="76.0" />
+      <Button fx:id="setMaxCreditButton" layoutX="466.0" layoutY="262.0" mnemonicParsing="false" onAction="#SetMaxCreditButtonAction" prefHeight="25.0" prefWidth="53.0" text="Set" />
+      <Label layoutX="101.0" layoutY="333.0" text="Set Min Credit Completed:" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="setMinCredit" layoutX="323.0" layoutY="331.0" prefHeight="25.0" prefWidth="76.0" />
+      <Button fx:id="setMinCreditButton" layoutX="466.0" layoutY="331.0" mnemonicParsing="false" onAction="#SetMinCreditButtonAction" prefHeight="25.0" prefWidth="53.0" text="Set" />
+      <Button fx:id="back" layoutX="277.0" layoutY="537.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="25.0" prefWidth="124.0" text="Back" />
+      <Button fx:id="preAdvisingOn" layoutX="175.0" layoutY="434.0" mnemonicParsing="false" onAction="#SetPreAdvisingOnButtonAction" prefHeight="42.0" prefWidth="136.0" text="Pre-Advising On" />
+      <Button fx:id="preAdvisingOFF" layoutX="398.0" layoutY="434.0" mnemonicParsing="false" onAction="#SetPreAdvisingOffButtonAction" prefHeight="42.0" prefWidth="136.0" text="Pre-Advising Off" />
+      <Label layoutX="157.0" layoutY="121.0" prefHeight="17.0" prefWidth="383.0" text="-------------------------------------------" textFill="#ffc108">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="493.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="339.0" layoutY="231.0" prefHeight="21.0" prefWidth="180.0" text="Previous Semester Number:" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="300.0" prefHeight="21.0" prefWidth="188.0" text="Previous Max Credit Number:" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="371.0" prefHeight="21.0" prefWidth="188.0" text="Previous Min Credit Number:" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSemester" layoutX="527.0" layoutY="231.0" prefHeight="21.0" prefWidth="76.0" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMinCredit" layoutX="519.0" layoutY="371.0" prefHeight="21.0" prefWidth="76.0" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMaxCredit" layoutX="534.0" layoutY="300.0" prefHeight="21.0" prefWidth="76.0" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="490.0" prefHeight="21.0" prefWidth="124.0" text="PreAdvising Panel:" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPanel" layoutX="522.0" layoutY="490.0" prefHeight="21.0" prefWidth="76.0" textFill="#fcf9f9">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

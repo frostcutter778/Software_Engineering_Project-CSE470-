@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="696.0" style="-fx-background-color: rgb(7,96,169);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AccountentController">
+   <children>
+      <Pane layoutX="8.0" layoutY="10.0" prefHeight="281.0" prefWidth="680.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="199.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accountent  Panel" wrappingWidth="310.13671875">
+               <font>
+                  <Font name="Californian FB Bold" size="36.0" />
+               </font>
+            </Text>
+            <Label layoutX="226.0" layoutY="93.0" prefHeight="23.0" prefWidth="37.0" text="Name:" />
+            <TextField fx:id="nametext" layoutX="274.0" layoutY="92.0" prefHeight="25.0" prefWidth="168.0" />
+            <Label layoutX="216.0" layoutY="128.0" prefHeight="23.0" prefWidth="47.0" text="Gender:" />
+            <TextField fx:id="gendertext" layoutX="274.0" layoutY="127.0" prefHeight="25.0" prefWidth="168.0" />
+            <Label layoutX="232.0" layoutY="165.0" prefHeight="23.0" prefWidth="26.0" text="ID:" />
+            <TextField fx:id="idtext" layoutX="274.0" layoutY="164.0" prefHeight="25.0" prefWidth="168.0" />
+            <Button layoutX="594.0" layoutY="207.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="36.0" prefWidth="72.0" text="Update" />
+         </children>
+      </Pane>
+      <Pane layoutX="8.0" layoutY="297.0" prefHeight="289.0" prefWidth="680.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="37.0" layoutY="84.0" prefHeight="23.0" prefWidth="64.0" text="Student ID:" />
+            <TextField fx:id="studentidtext" layoutX="114.0" layoutY="83.0" prefHeight="25.0" prefWidth="168.0" />
+            <Label layoutX="423.0" layoutY="28.0" prefHeight="23.0" prefWidth="64.0" text="Recipt No:" />
+            <TextField fx:id="recipttext" layoutX="498.0" layoutY="27.0" prefHeight="25.0" prefWidth="168.0" />
+            <Label layoutX="225.0" layoutY="139.0" prefHeight="23.0" prefWidth="80.0" text="Total Amount:" />
+            <TextField fx:id="totalamounttext" layoutX="321.0" layoutY="138.0" prefHeight="25.0" prefWidth="168.0" />
+            <Button fx:id="paidbutton" layoutX="225.0" layoutY="207.0" mnemonicParsing="false" onAction="#paidButton" prefHeight="36.0" prefWidth="72.0" text="Paid" />
+            <Label layoutX="51.0" layoutY="28.0" prefHeight="23.0" prefWidth="47.0" text="Bank:" />
+            <TextField fx:id="banktext" layoutX="114.0" layoutY="27.0" prefHeight="25.0" prefWidth="168.0" />
+            <Label layoutX="436.0" layoutY="83.0" prefHeight="23.0" prefWidth="37.0" text="Date:" />
+            <Button fx:id="backbutton" layoutX="419.0" layoutY="207.0" mnemonicParsing="false" onAction="#backbutton" prefHeight="36.0" prefWidth="72.0" text="Back" />
+            <TextField fx:id="datetext" layoutX="504.0" layoutY="82.0" prefHeight="25.0" prefWidth="168.0" promptText="yyyy/mm/dd" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

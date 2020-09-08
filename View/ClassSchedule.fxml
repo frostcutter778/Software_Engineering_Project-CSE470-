@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="696.0" style="-fx-background-color: rgb(7,96,169);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClassScheduleController">
+   <children>
+      <Label layoutX="40.0" layoutY="16.0" text="Semester ID :" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textSemesterId" layoutX="163.0" layoutY="14.0" />
+      <Label layoutX="37.0" layoutY="54.0" text="Semester Year :" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textSemesterYear" layoutX="167.0" layoutY="52.0" />
+      <Label layoutX="36.0" layoutY="85.0" text="Semester Session :" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textSemesterSession" layoutX="192.0" layoutY="84.0" prefHeight="25.0" prefWidth="136.0" />
+      <Button fx:id="addSemester" layoutX="341.0" layoutY="18.0" mnemonicParsing="false" onAction="#AddSemesterButtonAction" prefHeight="25.0" prefWidth="104.0" text="Add" />
+      <Label layoutX="47.0" layoutY="117.0" prefHeight="17.0" prefWidth="610.0" text="----------------------------------------------------------------------------------------------------------------------------" textFill="#f8f8f8" />
+      <Label layoutX="40.0" layoutY="135.0" text="Room Number:" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textRoomNumber" layoutX="163.0" layoutY="134.0" />
+      <Label layoutX="40.0" layoutY="169.0" text="Seating Capacity:" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textRoomCapacity" layoutX="196.0" layoutY="168.0" />
+      <Button fx:id="addRoom" layoutX="95.0" layoutY="201.0" mnemonicParsing="false" onAction="#AddRoomButtonAction" prefHeight="25.0" prefWidth="104.0" text="Add" />
+      <Button fx:id="deleteRoom" layoutX="236.0" layoutY="201.0" mnemonicParsing="false" onAction="#DeleteRoomButtonAction" prefHeight="25.0" prefWidth="104.0" text="Delete" />
+      <TableView fx:id="roomTable" layoutX="445.0" layoutY="129.0" prefHeight="103.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="roomNumber" prefWidth="88.0" text="Room Number" />
+          <TableColumn fx:id="roomCapacity" prefWidth="106.0" text="Seating Capacity" />
+        </columns>
+      </TableView>
+      <Label layoutX="43.0" layoutY="232.0" prefHeight="17.0" prefWidth="610.0" text="----------------------------------------------------------------------------------------------------------------------------" textFill="#f8f8f8" />
+      <Label layoutX="38.0" layoutY="250.0" text="ClassTiming ID :" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textMeetingId" layoutX="165.0" layoutY="249.0" />
+      <Label layoutX="40.0" layoutY="289.0" text="Class Time :" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textMeetingTime" layoutX="145.0" layoutY="288.0" />
+      <Button fx:id="addMeeting" layoutX="96.0" layoutY="327.0" mnemonicParsing="false" onAction="#AddMeetingButtonAction" prefHeight="25.0" prefWidth="104.0" text="Add" />
+      <Button fx:id="deleteMeeting" layoutX="236.0" layoutY="327.0" mnemonicParsing="false" onAction="#DeleteMeetingButtonAction" prefHeight="25.0" prefWidth="104.0" text="Delete" />
+      <TableView fx:id="meetingTable" layoutX="445.0" layoutY="249.0" prefHeight="103.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="meetingId" prefWidth="64.0" text="Id" />
+            <TableColumn fx:id="meetingTime" prefWidth="135.0" text="Class Time" />
+         </columns>
+      </TableView>
+      <Label layoutX="47.0" layoutY="352.0" prefHeight="17.0" prefWidth="610.0" text="----------------------------------------------------------------------------------------------------------------------------" textFill="#f8f8f8" />
+      <Label layoutX="42.0" layoutY="375.0" text="Course Number:" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCourseNumber" layoutX="169.0" layoutY="374.0" />
+      <Label layoutX="43.0" layoutY="408.0" text="Course ID:" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCourseId" layoutX="148.0" layoutY="407.0" />
+      <Button fx:id="addCourse" layoutX="96.0" layoutY="518.0" mnemonicParsing="false" onAction="#AddCourseButtonAction" prefHeight="25.0" prefWidth="104.0" text="Add" />
+      <Button fx:id="deleteCourse" layoutX="236.0" layoutY="518.0" mnemonicParsing="false" onAction="#DeleteCourseButtonAction" prefHeight="25.0" prefWidth="104.0" text="Delete" />
+      <TableView fx:id="courseTable" layoutX="393.0" layoutY="371.0" prefHeight="184.0" prefWidth="252.0">
+         <columns>
+            <TableColumn fx:id="courseId" prefWidth="66.0" text="ID" />
+            <TableColumn fx:id="courseNumber" prefWidth="49.0" text="Number" />
+            <TableColumn fx:id="courseFacultyId" prefWidth="94.0" text="Faculty ID" />
+            <TableColumn fx:id="courseMaxNumberOfStudents" prefWidth="50.0" text="MaxNumber" />
+         </columns>
+      </TableView>
+      <Label layoutX="43.0" layoutY="445.0" text="Faculty ID:" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCourseFacultyId" layoutX="142.0" layoutY="444.0" />
+      <Label layoutX="40.0" layoutY="483.0" text="Max Number of Students :" textFill="#f8f7f7">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCourseMaxNumberOfStudents" layoutX="246.0" layoutY="482.0" prefHeight="25.0" prefWidth="95.0" />
+      <Button fx:id="UpdateSemester" layoutX="341.0" layoutY="52.0" mnemonicParsing="false" onAction="#UpdateSemesterButtonAction" prefHeight="25.0" prefWidth="104.0" text="Update" />
+      <Button fx:id="ShowResultsSemester" layoutX="341.0" layoutY="87.0" mnemonicParsing="false" onAction="#ShowResultsSemesterButtonAction" prefHeight="25.0" prefWidth="104.0" text="Show Results" />
+      <TableView fx:id="semesterTable" layoutX="465.0" layoutY="13.0" prefHeight="103.0" prefWidth="180.0">
+         <columns>
+            <TableColumn fx:id="semesterId" prefWidth="43.0" text="Id" />
+            <TableColumn fx:id="semesterYear" prefWidth="64.0" text="Year" />
+            <TableColumn fx:id="semesterSession" prefWidth="72.0" text="Session" />
+         </columns>
+      </TableView>
+      <Label layoutX="43.0" layoutY="553.0" prefHeight="17.0" prefWidth="610.0" text="----------------------------------------------------------------------------------------------------------------------------" textFill="#f8f8f8" />
+      <Button fx:id="back" layoutX="236.0" layoutY="569.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="25.0" prefWidth="104.0" text="Back" />
+      <Button fx:id="newGenerate" layoutX="528.0" layoutY="569.0" mnemonicParsing="false" onAction="#newGenerateButtonAction" prefHeight="25.0" prefWidth="164.0" text="Generate Class Schedule ! " textFill="RED" />
+      <Label layoutX="47.0" layoutY="570.0" prefHeight="22.0" prefWidth="199.0" text="***Add Semester part first ! " textFill="WHITE">
+         <font>
+            <Font name="Bell MT Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="refresh" layoutX="657.0" layoutY="4.0" mnemonicParsing="false" onAction="#RefreshButtonAction" prefHeight="25.0" prefWidth="35.0" />
+      <Button fx:id="oldGenerate" layoutX="352.0" layoutY="569.0" mnemonicParsing="false" onAction="#oldGenerateButtonAction" prefHeight="25.0" prefWidth="164.0" text="Old Class Schedule ! " textFill="RED" />
+      <ImageView fx:id="img" fitHeight="126.0" fitWidth="164.0" layoutX="301.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

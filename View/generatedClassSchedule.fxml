@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="696.0" style="-fx-background-color: rgb(7,96,169);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GeneratedClassScheduleController">
+   <children>
+      <Pane layoutX="498.0" layoutY="8.0" prefHeight="584.0" prefWidth="198.0" style="-fx-background-color: rgb(15,156,232);">
+         <children>
+            <ImageView fitHeight="156.0" fitWidth="174.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bracu_logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="-1.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="back" layoutX="81.0" layoutY="488.0" mnemonicParsing="false" onAction="#BackButtonAction" text="Back" />
+         </children>
+      </Pane>
+      <Label layoutX="48.0" layoutY="37.0" text="Generated Class Schedule" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="subjectTable" layoutX="7.0" layoutY="98.0" prefHeight="493.0" prefWidth="489.0">
+        <columns>
+          <TableColumn fx:id="subjectId" prefWidth="35.0" text="SubjectId" />
+          <TableColumn fx:id="courseId" prefWidth="57.0" text="CourseId" />
+            <TableColumn fx:id="section" prefWidth="37.0" text="Section" />
+            <TableColumn fx:id="facultyId" prefWidth="59.0" text="FacultyId" />
+            <TableColumn fx:id="deptId" prefWidth="44.0" text="DeptId" />
+            <TableColumn fx:id="semesterId" prefWidth="49.0" text="SemesterID" />
+            <TableColumn fx:id="roomNo" prefWidth="63.0" text="RoomNo" />
+            <TableColumn fx:id="subjectTime" prefWidth="137.0" text="subjectTime" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

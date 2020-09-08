@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="696.0" style="-fx-background-color: rgb(7,96,169);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CourseController">
+   <children>
+      <Pane layoutX="20.0" layoutY="17.0" opacity="0.8" prefHeight="566.0" prefWidth="657.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="pretable" layoutY="120.0" prefHeight="442.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="col_course" prefWidth="199.0" text="Course List" />
+              </columns>
+            </TableView>
+            <Button layoutX="206.0" layoutY="296.0" mnemonicParsing="false" onAction="#addButton" text="ADD" />
+            <Button layoutX="202.0" layoutY="327.0" mnemonicParsing="false" onAction="#dropButton" prefHeight="25.0" prefWidth="49.0" text="DROP" />
+            <Button layoutX="569.0" layoutY="516.0" mnemonicParsing="false" onAction="#backbutton" prefHeight="35.0" prefWidth="68.0" text="Back" />
+            <Label layoutX="474.0" layoutY="165.0" prefHeight="25.0" prefWidth="58.0" text="Course_id:" />
+            <Label layoutX="474.0" layoutY="237.0" prefHeight="25.0" prefWidth="81.0" text="Course Details:" />
+            <Label layoutX="472.0" layoutY="289.0" prefHeight="25.0" prefWidth="68.0" text="Department:" />
+            <Label fx:id="courseidtext" layoutX="540.0" layoutY="165.0" prefHeight="25.0" prefWidth="89.0" />
+            <Label fx:id="coursedetailstext" layoutX="477.0" layoutY="263.0" prefHeight="25.0" prefWidth="173.0" />
+            <Label fx:id="depttext" layoutX="566.0" layoutY="289.0" prefHeight="25.0" prefWidth="68.0" />
+            <TableView fx:id="addedtable" layoutX="259.0" layoutY="115.0" prefHeight="449.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="col_addcourse" prefWidth="199.0" text="Adde Courses" />
+              </columns>
+            </TableView>
+            <Label layoutX="472.0" layoutY="325.0" prefHeight="25.0" prefWidth="49.0" text="Faculty:" />
+            <Label fx:id="facultytext" layoutX="533.0" layoutY="325.0" prefHeight="25.0" prefWidth="89.0" />
+            <Label layoutX="472.0" layoutY="367.0" prefHeight="25.0" prefWidth="58.0" text="TimeSlot:" />
+            <Label fx:id="timetext" layoutX="475.0" layoutY="403.0" prefHeight="25.0" prefWidth="166.0" />
+            <Label layoutX="472.0" layoutY="203.0" prefHeight="25.0" prefWidth="58.0" text="Section :" />
+            <Label fx:id="sectiontext" layoutX="538.0" layoutY="203.0" prefHeight="25.0" prefWidth="89.0" />
+            <Text layoutX="200.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pre Advising Panel" wrappingWidth="318.9999922513962">
+               <font>
+                  <Font name="Arial Italic" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
