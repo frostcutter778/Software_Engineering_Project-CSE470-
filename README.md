@@ -1,4 +1,4 @@
-# Software_Engineering_Project-CSE470-
+# Software_Engineering_Project-CSE470
 University Student Information System(USIS)
 It tends to serve 3 different customer bases. It targets students, faculty and accountants as well. 
 4 different panels are there : Student Panel, Faculty Panel, Accountant Panel and lastly Admin Panel.
